@@ -37,10 +37,10 @@ if(BITS EQUAL 64)
 else()
   set(OPENSSL_URL "http://packages.kitware.com/download/item/3877/OpenSSL_1_0_1e-install-32.tar.gz")
 endif()
-set(QT_URL "http://download.qt-project.org/official_releases/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.zip")
+set(QT_URL "http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.zip")
 string(TOLOWER ${CMAKE_BUILD_TYPE} qt_build_type)
 string(SUBSTRING ${qt_build_type} 0 3 _short_build_type)
-set(QT_BUILD_DIR "${DEST_DIR}/qt-4.8.5-${BITS}-${_compiler_name}-${_short_build_type}")
+set(QT_BUILD_DIR "${DEST_DIR}/qt-4.8.6-${BITS}-${_compiler_name}-${_short_build_type}")
 
 # Set OpenSSL variables
 get_filename_component(_archive_name ${OPENSSL_URL} NAME)
